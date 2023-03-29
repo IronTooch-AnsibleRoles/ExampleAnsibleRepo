@@ -1,10 +1,8 @@
 name: Ansible Pull Request Demo
-run-name: ${{ github.actor }} is running code quality checks for ${{ GITHUB_SHA }} after a push
+run-name: ${{ github.actor }} is running code quality checks for ${{ github.sha }} after a push
 on: [push]
 jobs:
   Ansible-Lint-Test:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Running ansible lint test "
-
-      
