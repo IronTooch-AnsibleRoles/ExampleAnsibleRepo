@@ -8,3 +8,8 @@
       gather_subset:
         - 'machine'
         - 'network'
+
+  - name: Printing some stuff with extra spaces at the end     
+    ansible.builtin.debug:
+      msg: "Important stuff"   
+    
