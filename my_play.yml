@@ -1,0 +1,10 @@
+---
+- hosts: all
+  become: true
+  tasks:
+
+  - name: Gather machine facts
+    ansible.builtin.setup:
+      gather_subset:
+        - 'machine'
+        - 'network'
